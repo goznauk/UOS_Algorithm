@@ -10,11 +10,6 @@ public class DAO {
     Statement statement;
     ResultSet resultSet;
 
-    String addr = "jdbc:mysql://173.194.240.33/algorithm";
-    String user = "root";
-    String pw = "jkl;'";
-
-    String sql = "INSERT INTO movieDB values(?,?)";
 
     public DAO() {
        /* try {
@@ -28,12 +23,21 @@ public class DAO {
 
     public void insert(int code, String peers) {
         try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            String addr = "jdbc:mysql://173.194.240.33/algorithm";
+            String user = "root";
+            String pw = "jkl;'";
+
+            String sql = "INSERT INTO movieDB values(?,?)";
             connection = DriverManager.getConnection(addr, user, pw);
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, code);
             preparedStatement.setString(2, peers);
             preparedStatement.execute();
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
