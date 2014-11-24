@@ -30,17 +30,19 @@ public class DAO {
             String pw = "jkl;'";
 
             String sql = "INSERT INTO movieDB values(?,?)";
+
             connection = DriverManager.getConnection(addr, user, pw);
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, code);
-            preparedStatement.setString(2, peers);
-            preparedStatement.execute();
+            System.out.println("creating a statement..");
+
+           // PreparedStatement preparedStatement = connection.prepareStatement(sql);
+           // preparedStatement.setInt(1, code);
+           // preparedStatement.setString(2, peers);
+           // preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
     public void enterDB() {
