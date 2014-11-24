@@ -218,7 +218,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/goznauk/Projects/UOS_Algorithm/MovieCrawler/src/com/goznauk/Node.java" />
@@ -493,12 +493,12 @@
       <workItem from="1416385837573" duration="41000" />
       <workItem from="1416640458436" duration="123000" />
       <workItem from="1416726779952" duration="99000" />
-      <workItem from="1416811572716" duration="2471000" />
+      <workItem from="1416811572716" duration="2600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34764000" />
+    <option name="totallyTimeSpent" value="34893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="709" extended-state="6" />
