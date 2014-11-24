@@ -5,9 +5,11 @@ public class Main {
     public static final boolean isActor = false;
 
     public static void main(String[] args) {
-        FriendFinder friendFinder = new FriendFinder(254992, 1748);
+       // FriendFinder friendFinder = new FriendFinder(254992, 1748);
         //FriendFinder friendFinder = new FriendFinder(254992, 216937);
-        friendFinder.find(3);
-        friendFinder.printAll();
+     //   friendFinder.find(3);
+       // friendFinder.printAll();
+        DAO dao = new DAO();
+        dao.insert(12, "{123,123}");
     }
 }
