@@ -1,7 +1,6 @@
 package com.goznauk;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -14,14 +13,16 @@ public class FriendFinder {
     private int iCode, fCode;
     private Node iNode;
     private HashSet<Integer> codeSetForAnswer;
-    private HashSet<Integer> codeSetForNoRepeat;
+    private HashSet<Integer> actorCodeSetForNoRepeat;
+    private HashSet<Integer> movieCodeSetForNoRepeat;
 
     public FriendFinder(int iCode, int fCode) {
         this.iCode = iCode;
         this.fCode = fCode;
         this.iNode = new Node(0, new Info(iCode, "initial", isActor));
         codeSetForAnswer = new HashSet<Integer>();
-        codeSetForNoRepeat = new HashSet<Integer>();
+        actorCodeSetForNoRepeat = new HashSet<Integer>();
+        movieCodeSetForNoRepeat = new HashSet<Integer>();
     }
 
     public void find(int depth) {
@@ -58,11 +59,11 @@ public class FriendFinder {
             System.exit(1);
         }
 
-        if(codeSetForNoRepeat.contains(actor.getInfo().getCode())) { return; }
-        codeSetForNoRepeat.add(actor.getInfo().getCode());
+        if(actorCodeSetForNoRepeat.contains(actor.getInfo().getCode())) { return; }
+        actorCodeSetForNoRepeat.add(actor.getInfo().getCode());
 
         // get Movies
-        actor.addAdjacentNodes(NaverMovie.getMoviesFromActor(actor.getInfo().getCode(), codeSetForAnswer));
+        actor.addAdjacentNodes(NaverMovie.getMoviesFromActor(actor.getInfo().getCode(), null));
         System.out.println("get movies");
 
 
@@ -73,8 +74,8 @@ public class FriendFinder {
                 Thread t = new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        if(codeSetForNoRepeat.contains(n.getInfo().getCode())) { return; }
-                        codeSetForNoRepeat.add(n.getInfo().getCode());
+                        if(movieCodeSetForNoRepeat.contains(n.getInfo().getCode())) { return; }
+                        movieCodeSetForNoRepeat.add(n.getInfo().getCode());
 
                         long startTime = System.currentTimeMillis();
 

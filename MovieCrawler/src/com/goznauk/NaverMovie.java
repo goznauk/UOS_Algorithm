@@ -133,7 +133,7 @@ public class NaverMovie {
 
                 for (Element row : rows) {
                     Info i = new Info(Integer.parseInt(row.attr("href").substring(28)), row.select("img").attr("alt"), isMovie);
-                    codeSet.add(i.getCode());
+                //    codeSet.add(i.getCode());
                     movies.add(i);
                 }
 
