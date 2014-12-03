@@ -18,7 +18,7 @@ public class Main {
         //    friendFinder.find(4);
         //    friendFinder.printAll();
 
-        DataSetter.setActors(150001, 180000);
+        DataSetter.setActors(300001, 400000);
 
 
         //todo 10196
