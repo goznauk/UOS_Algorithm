@@ -12,6 +12,7 @@
       <element id="library" level="project" name="com.mysql.jdbc:com.springsource.com.mysql.jdbc:5.1.6" />
       <element id="library" level="project" name="org.jsoup:jsoup:1.8.1" />
       <element id="library" level="project" name="org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2" />
+      <element id="library" level="project" name="com.google.code.gson:gson:2.3" />
     </root>
   </artifact>
 </component>
