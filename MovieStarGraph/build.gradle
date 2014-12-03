@@ -4,7 +4,7 @@ apply plugin: 'idea'
 version = '1.0'
 
 jar {
-    archiveName = 'MSG60001to90000.jar'
+    archiveName = 'MSG150001to180000.jar'
 
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     manifest {

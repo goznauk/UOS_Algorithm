@@ -18,8 +18,10 @@ public class Main {
         //    friendFinder.find(4);
         //    friendFinder.printAll();
 
-        DataSetter.setActors(60001, 90000);
+        DataSetter.setActors(150001, 180000);
 
+
+        //todo 10196
         //   Node.convertJSONtoIntArray("[32, 123, 124, 11]");
 
         //  System.out.println(DAO.getPeers(isActor, 11));
