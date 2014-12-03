@@ -18,7 +18,7 @@ public class Main {
         //    friendFinder.find(4);
         //    friendFinder.printAll();
 
-        DataSetter.setActors(30001, 60000);
+        DataSetter.setActors(60001, 90000);
 
         //   Node.convertJSONtoIntArray("[32, 123, 124, 11]");
 
