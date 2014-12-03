@@ -34,11 +34,18 @@ public class FriendFinder {
             tmpNodes = findNext(tmpNodes);
             if(codeSetForAnswer.contains(fCode)) {
                 System.out.println("at Depth " + (i+1) + " : Found");
-                iNode.print();
+                printPath();
+                //iNode.print();
                 return;
             }
         }
     }
+
+    private void printPath() {
+
+
+    }
+
 
     private ArrayList<Node> findNext(ArrayList<Node> recentNodes) {
         ArrayList<Node> nextNodes = new ArrayList<Node>();
@@ -105,6 +112,10 @@ public class FriendFinder {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void printNode() {
+
     }
 
     public void printAll() {

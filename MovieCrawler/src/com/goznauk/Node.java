@@ -9,13 +9,21 @@ import java.util.HashSet;
 public class Node {
     private int depth;
     private Info info;
+    private Node parent;
     private ArrayList<Node> adjacentNodes;
 
     public Node(int depth, Info info) {
+        this(depth, info, null);
+    }
+
+    public Node(int depth, Info info, Node parent) {
         this.depth = depth;
         this.info = info;
+        this.parent = parent;
         adjacentNodes = new ArrayList<Node>();
     }
+
+
 
     public int getDepth() {
         return depth;
@@ -43,7 +51,7 @@ public class Node {
 
     public void addAdjacentNodes(ArrayList<Info> infos) {
         for(Info i : infos) {
-            adjacentNodes.add(new Node(depth + 1, i));
+            adjacentNodes.add(new Node(depth + 1, i, this));
         }
     }
 
@@ -55,8 +63,6 @@ public class Node {
             }
             return;
         }
-
-
 
         String s = "";
         for(int i = 1; i < depth; i++) {
@@ -72,4 +78,17 @@ public class Node {
             node.print();
         }
     }
+
+    public Node getParent() {
+        return parent;
+    }
+
+    public void setParent(Node parent) {
+        this.parent = parent;
+    }
+
+    public int getCode() {
+        return info.getCode();
+    }
+
 }
