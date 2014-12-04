@@ -18,7 +18,12 @@ public class Main {
 
     //    DataSetter.setMovies(300001, 400000);
 
-        System.out.println(Node.getParentsString(PeerFinder.find(13916, 108226, 3)));
+        Node node = PeerFinder.find(13916, 108226, 3);
+        if(node == null) {
+            System.out.println("Path Doesn't Exist");
+            return;
+        }
+        System.out.println(Node.getParentsString(node));
 
     }
 }
