@@ -70,10 +70,9 @@ public class DAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, code);
             resultSet = preparedStatement.executeQuery();
-            resultSet.next();
-
-            str = resultSet.getString(1);
-
+            if(resultSet.next()) {
+                str = resultSet.getString(1);
+            }
             preparedStatement.close();
             connection.close();
         } catch (SQLException e) {
