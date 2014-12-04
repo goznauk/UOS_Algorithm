@@ -11,17 +11,16 @@ public class PeerFinder {
     public static final boolean isMovie = true;
     public static final boolean isActor = false;
 
-    public static Node find(int iCode, int fCode, int limitDepth) {
+    public static Node find(int iCode, int fCode, int depthLimit) {
         Node iNode, fNode;
         ArrayList<Node> nextNodes = new ArrayList<Node>();
-        iNode = new Node(0, iCode, null);
+        iNode = new Node(iCode, null);
         nextNodes.add(iNode);
 
-        for(int i = 0; i < limitDepth; i++) {
+        for(int i = 0; i < depthLimit; i++) {
             System.out.println("===================== finding at depth " + (i+1));
             for(Node node : nextNodes) {
                 fNode = find(node, fCode);
-
                 if(fNode!=null) {
                     System.out.println("success at depth " + (i+1));
                     return fNode;
@@ -29,7 +28,6 @@ public class PeerFinder {
             }
             nextNodes = iNode.getChilds(i);
         }
-
         return null;
     }
 
@@ -41,16 +39,14 @@ public class PeerFinder {
 
         movieCodes = Node.convertJSONtoIntArray(DAO.getPeers(isActor, actorNode.getCode()));
         for(int movieCode : movieCodes) {
-            actorNode.addAdjacentNode(new Node(actorNode.getDepth() + 1, movieCode, actorNode));
+            actorNode.addAdjacentNode(new Node(movieCode, actorNode));
         }
 
         for(Node movie : actorNode.getAdjacentNodes()) {
             actorCodes = Node.convertJSONtoIntArray(DAO.getPeers(isMovie, movie.getCode()));
             for(int actorCode : actorCodes) {
-                Node actor = new Node(actorNode.getDepth() + 2, actorCode, movie);
+                Node actor = new Node(actorCode, movie);
                 movie.addAdjacentNode(actor);
-
-                //System.out.println(actorCode + " added");
                 if(actorCode == fCode) {
                     return actor;
                 }
@@ -59,7 +55,4 @@ public class PeerFinder {
 
         return null;
     }
-
-
-
 }

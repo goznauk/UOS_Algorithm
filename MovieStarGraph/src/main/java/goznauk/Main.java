@@ -1,5 +1,7 @@
 package goznauk;
 
+import java.util.Scanner;
+
 /**
  * Created by goznauk on 2014. 12. 3..
  */
@@ -16,9 +18,28 @@ public class Main {
         //  FriendFinder friendFinder = new FriendFinder(311452, 64596); // 백상호 : 김이안, 이문수
         //  FriendFinder friendFinder = new FriendFinder(246775, 295069); // 김종남 : 노유난, 지상혁 - not in find(4)
 
-    //    DataSetter.setMovies(300001, 400000);
+        /*
+        DataSetter.setMovies(300001, 400000);
+        */
 
-        Node node = PeerFinder.find(13916, 108226, 3);
+        Node node;
+        int iCode, fCode, depthLimit;
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input iCode : ");
+        iCode = scanner.nextInt();
+        System.out.print("Input fCode : ");
+        fCode = scanner.nextInt();
+        System.out.print("Input depthLimit : ");
+        depthLimit = scanner.nextInt();
+
+        node = PeerFinder.find(iCode, fCode, depthLimit);
+
+      //  node = PeerFinder.find(13916, 108226, 3); // 1
+    //    node = PeerFinder.find(311452, 64596, 3); // 1
+
+
         if(node == null) {
             System.out.println("Path Doesn't Exist");
             return;

@@ -9,20 +9,14 @@ import java.util.ArrayList;
  * Created by goznauk on 2014. 12. 3..
  */
 public class Node {
-    private int depth;
     private int code;
     private Node parent;
     private ArrayList<Node> adjacentNodes;
 
-    public Node(int depth, int code, Node parent) {
-        this.depth = depth;
+    public Node(int code, Node parent) {
         this.code = code;
         this.parent = parent;
         adjacentNodes = new ArrayList<Node>();
-    }
-
-    public int getDepth() {
-        return depth;
     }
 
     public int getCode() {
