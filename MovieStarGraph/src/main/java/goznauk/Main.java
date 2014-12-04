@@ -14,18 +14,11 @@ public class Main {
         //  FriendFinder friendFinder = new FriendFinder(324964, 57659); // 최훈존 : 김소영, 정덕순
         //  FriendFinder friendFinder = new FriendFinder(41324, 134826); // 박영재 : 김삼화, 김수현
         //  FriendFinder friendFinder = new FriendFinder(311452, 64596); // 백상호 : 김이안, 이문수
-        //    FriendFinder friendFinder = new FriendFinder(246775, 295069); // 김종남 : 노유난, 지상혁 - not in find(4)
-        //    friendFinder.find(4);
-        //    friendFinder.printAll();
+        //  FriendFinder friendFinder = new FriendFinder(246775, 295069); // 김종남 : 노유난, 지상혁 - not in find(4)
 
     //    DataSetter.setMovies(300001, 400000);
 
-    //    Node n = PeerFinder.find(48364, 301425, -1);
-        System.out.println(Node.getParentsString(PeerFinder.find(311452, 64596, 2)));
+        System.out.println(Node.getParentsString(PeerFinder.find(13916, 108226, 3)));
 
-
-        //   Node.convertJSONtoIntArray("[32, 123, 124, 11]");
-
-        //  System.out.println(DAO.getPeers(isActor, 11));
     }
 }

@@ -30,7 +30,7 @@ public class PeerFinder {
             nextNodes = iNode.getChilds(i);
         }
 
-        return iNode;
+        return null;
     }
 
 
