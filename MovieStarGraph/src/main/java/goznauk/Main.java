@@ -18,7 +18,7 @@ public class Main {
         //    friendFinder.find(4);
         //    friendFinder.printAll();
 
-        DataSetter.setMovies(1, 400000);
+        DataSetter.setMovies(300001, 400000);
 
 
         //todo 10196
