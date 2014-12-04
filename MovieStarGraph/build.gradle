@@ -4,7 +4,7 @@ apply plugin: 'idea'
 version = '1.0'
 
 jar {
-    archiveName = 'MSG.jar'
+    archiveName = 'chkactorDB.jar'
 
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     manifest {

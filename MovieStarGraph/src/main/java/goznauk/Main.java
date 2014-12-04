@@ -18,10 +18,11 @@ public class Main {
         //  FriendFinder friendFinder = new FriendFinder(311452, 64596); // 백상호 : 김이안, 이문수
         //  FriendFinder friendFinder = new FriendFinder(246775, 295069); // 김종남 : 노유난, 지상혁 - not in find(4)
 
-        /*
-        DataSetter.setMovies(300001, 400000);
-        */
 
+        DataSetter.setMovies(1, 400000);
+
+
+        /*
         Node node;
         int iCode, fCode, depthLimit;
 
@@ -45,6 +46,6 @@ public class Main {
             return;
         }
         System.out.println(Node.getParentsString(node));
-
+*/
     }
 }
