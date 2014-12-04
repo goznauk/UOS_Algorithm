@@ -35,8 +35,28 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="450">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NaverMovie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/NaverMovie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="2040">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FriendFinder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/FriendFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2647059" vertical-offset="1143" max-vertical-offset="1965">
+              <caret line="88" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,30 +114,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UOS_Algorithm.iml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UOS_Algorithm.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UOS_Algorithm.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39215687" vertical-offset="0" max-vertical-offset="612">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/DAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="270">
-              <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-              <folding>
-                <element signature="method#insert#0;class#DAO#0" expanded="false" />
-                <element signature="method#getPeers#0;class#DAO#0" expanded="false" />
-                <marker date="1417601739000" expanded="true" signature="554:585" placeholder="INSERT INTO ..." />
-                <marker date="1417601739000" expanded="true" signature="633:664" placeholder="INSERT INTO ..." />
-                <marker date="1417601739000" expanded="true" signature="1730:1770" placeholder="SELECT peers..movieDB..." />
-                <marker date="1417601739000" expanded="true" signature="1818:1858" placeholder="SELECT peers..actorDB..." />
-                <marker date="1417601739000" expanded="true" signature="1824:1858" placeholder="select peers..actorDB..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -125,30 +127,9 @@
       <file leaf-file-name="Nodeold.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/Nodeold.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1260">
+            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1260">
               <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-              <folding>
-                <element signature="e#313#314#0" expanded="false" />
-                <element signature="e#352#353#0" expanded="false" />
-                <element signature="e#586#587#0" expanded="false" />
-                <element signature="e#614#615#0" expanded="false" />
-                <element signature="e#653#654#0" expanded="false" />
-                <element signature="e#687#688#0" expanded="false" />
-                <element signature="e#716#717#0" expanded="false" />
-                <element signature="e#743#744#0" expanded="false" />
-                <element signature="e#781#782#0" expanded="false" />
-                <element signature="e#813#814#0" expanded="false" />
-                <element signature="e#868#869#0" expanded="false" />
-                <element signature="e#907#908#0" expanded="false" />
-                <element signature="e#967#968#0" expanded="false" />
-                <element signature="e#1020#1021#0" expanded="false" />
-                <element signature="e#1734#1735#0" expanded="false" />
-                <element signature="e#1763#1764#0" expanded="false" />
-                <element signature="e#1808#1809#0" expanded="false" />
-                <element signature="e#1844#1845#0" expanded="false" />
-                <element signature="e#1872#1873#0" expanded="false" />
-                <element signature="e#1909#1910#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -770,12 +751,12 @@
       <workItem from="1417540659020" duration="1000" />
       <workItem from="1417594634514" duration="7755000" />
       <workItem from="1417609134644" duration="720000" />
-      <workItem from="1417613651418" duration="622000" />
+      <workItem from="1417613651418" duration="1094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52006000" />
+    <option name="totallyTimeSpent" value="52478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="709" extended-state="6" />
@@ -883,28 +864,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1020">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -941,28 +901,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1020">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -999,28 +938,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1020">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,28 +975,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1215">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,28 +1012,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1215">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,28 +1049,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1215">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,28 +1086,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1215">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,13 +1102,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/NaverMovie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1299,54 +1126,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/FriendFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
-          <caret line="124" column="6" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/peerFinder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/Nodeold.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1290">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-          <folding>
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,11 +1147,11 @@
           <folding>
             <element signature="method#insert#0;class#DAO#0" expanded="false" />
             <element signature="method#getPeers#0;class#DAO#0" expanded="false" />
-            <marker date="1417601739000" expanded="true" signature="554:585" placeholder="INSERT INTO ..." />
-            <marker date="1417601739000" expanded="true" signature="633:664" placeholder="INSERT INTO ..." />
-            <marker date="1417601739000" expanded="true" signature="1730:1770" placeholder="SELECT peers..movieDB..." />
-            <marker date="1417601739000" expanded="true" signature="1818:1858" placeholder="SELECT peers..actorDB..." />
-            <marker date="1417601739000" expanded="true" signature="1824:1858" placeholder="select peers..actorDB..." />
+            <marker date="1417601739000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1417601739000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1417601739000" expanded="true" signature="-1:-1" placeholder="SELECT peers..movieDB..." />
+            <marker date="1417601739000" expanded="true" signature="-1:-1" placeholder="SELECT peers..actorDB..." />
+            <marker date="1417601739000" expanded="true" signature="-1:-1" placeholder="select peers..actorDB..." />
           </folding>
         </state>
       </provider>
@@ -1424,8 +1207,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UOS_Algorithm.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39215687" vertical-offset="0" max-vertical-offset="612">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/Nodeold.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1290">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/NaverMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="2040">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/goznauk/FriendFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2647059" vertical-offset="1143" max-vertical-offset="1965">
+          <caret line="88" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding />
         </state>
       </provider>

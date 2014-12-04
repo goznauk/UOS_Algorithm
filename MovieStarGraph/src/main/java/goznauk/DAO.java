@@ -26,8 +26,7 @@ public class DAO {
                 sql += "INSERT INTO actorDB values(?,?)";
             }
             connection = DriverManager.getConnection(addr, user, pw);
-            System.out.println("creating a statement..");
-
+            System.out.println("[DAO] insert...");
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, code);
@@ -44,6 +43,8 @@ public class DAO {
     }
 
     public static String getPeers(boolean isMovie, int code) {
+        long startTime = System.currentTimeMillis();
+
         Connection connection;
         Statement statement;
         ResultSet resultSet;
@@ -65,8 +66,6 @@ public class DAO {
                 sql += "SELECT peers FROM actorDB WHERE code = ?";
             }
             connection = DriverManager.getConnection(addr, user, pw);
-            System.out.println("creating a statement..");
-
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, code);
@@ -83,6 +82,11 @@ public class DAO {
             e.printStackTrace();
         }
 
+        if(isMovie) {
+            System.out.println("[DAO] get Actors from : " + code + "\t( " + (System.currentTimeMillis() - startTime) + "ms )");
+        } else {
+            System.out.println("[DAO] get Movies from : " + code + "\t( " + (System.currentTimeMillis() - startTime) + "ms )");
+        }
         return str;
     }
 }

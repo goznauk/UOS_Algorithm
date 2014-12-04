@@ -10,16 +10,19 @@ import java.util.ArrayList;
  */
 public class Node {
     private int depth;
-
     private int code;
     private Node parent;
     private ArrayList<Node> adjacentNodes;
 
-    public Node(int depth, int code, Node parent, ArrayList<Node> adjacentNodes) {
+    public Node(int depth, int code, Node parent) {
         this.depth = depth;
         this.code = code;
         this.parent = parent;
-        this.adjacentNodes = adjacentNodes;
+        adjacentNodes = new ArrayList<Node>();
+    }
+
+    public int getDepth() {
+        return depth;
     }
 
     public int getCode() {
@@ -30,6 +33,8 @@ public class Node {
         return parent;
     }
 
+    public ArrayList<Node> getAdjacentNodes() { return adjacentNodes; }
+
     public void addAdjacentNode(Node node) {
         adjacentNodes.add(node);
     }
@@ -38,4 +43,38 @@ public class Node {
         Gson gson = new Gson();
         return gson.fromJson(json, int[].class);
     }
+
+    public static String getParentsString(Node node) {
+        String parentsString = node.code + "  ";
+        if(node.parent == null) {
+            return parentsString;
+        } else {
+            return parentsString + getParentsString(node.parent);
+        }
+    }
+
+    public ArrayList<Node> getChilds(int depth) {
+        ArrayList<Node> firstList = new ArrayList<Node>();
+        firstList.add(this);
+        return getChilds(firstList, 0, depth);
+    }
+
+    private ArrayList<Node> getChilds(ArrayList<Node> parents, int count, int depth) {
+        ArrayList<Node> childs = new ArrayList<Node>();
+
+        for(Node parent : parents) {
+            for (Node movie : parent.adjacentNodes) {
+                for (Node actor : movie.adjacentNodes) {
+                    childs.add(actor);
+                }
+            }
+        }
+
+        if(count==depth) {
+            return childs;
+        } else {
+            return getChilds(childs, count + 1, depth);
+        }
+    }
+
 }

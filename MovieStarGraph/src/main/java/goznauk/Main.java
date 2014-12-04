@@ -18,10 +18,12 @@ public class Main {
         //    friendFinder.find(4);
         //    friendFinder.printAll();
 
-        DataSetter.setMovies(300001, 400000);
+    //    DataSetter.setMovies(300001, 400000);
+
+    //    Node n = PeerFinder.find(48364, 301425, -1);
+        System.out.println(Node.getParentsString(PeerFinder.find(311452, 64596, 2)));
 
 
-        //todo 10196
         //   Node.convertJSONtoIntArray("[32, 123, 124, 11]");
 
         //  System.out.println(DAO.getPeers(isActor, 11));
