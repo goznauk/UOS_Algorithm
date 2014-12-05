@@ -44,12 +44,16 @@ public class PeerFinder {
 
         for(Node movie : actorNode.getAdjacentNodes()) {
             actorCodes = Node.convertJSONtoIntArray(DAO.getPeers(isMovie, movie.getCode()));
-            for(int actorCode : actorCodes) {
-                Node actor = new Node(actorCode, movie);
-                movie.addAdjacentNode(actor);
-                if(actorCode == fCode) {
-                    return actor;
+            try {
+                for (int actorCode : actorCodes) {
+                    Node actor = new Node(actorCode, movie);
+                    movie.addAdjacentNode(actor);
+                    if (actorCode == fCode) {
+                        return actor;
+                    }
                 }
+            } catch (NullPointerException e) {
+                Main.failed.add(movie.getCode());
             }
         }
 

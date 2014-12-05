@@ -50,16 +50,20 @@ public class NaverMovie {
 
             while ((line = br.readLine()) != null) {
                 sb.append(line);
+                System.out.println(line);
             }
 
             source = sb.toString();
 
             Document doc = Jsoup.parse(source);
             Elements rows = doc.select("a[title].k_name");
+            System.out.println(rows.size());
 
             for (Element row : rows) {
                 Info i = new Info(Integer.parseInt(row.attr("href").substring(28)), row.attr("title"), isActor);
                 actors.add(i.getCode());
+                System.out.println(Integer.parseInt(row.attr("href").substring(28)));
+
             }
 
         } catch (Exception e) {

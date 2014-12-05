@@ -1,5 +1,6 @@
 package goznauk;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -8,6 +9,8 @@ import java.util.Scanner;
 public class Main {
     public static final boolean isMovie = true;
     public static final boolean isActor = false;
+    public static HashSet<Integer> failed;
+
 
     public static void main(String[] args) {
         //  FriendFinder friendFinder = new FriendFinder(13916, 108226); // 최진안 : 백설희, 다나 - google dev
@@ -19,10 +22,10 @@ public class Main {
         //  FriendFinder friendFinder = new FriendFinder(246775, 295069); // 김종남 : 노유난, 지상혁 - not in find(4)
 
 
-        DataSetter.setMovies(1, 400000);
+       // DataSetter.setMovies(10793, 10793);
 
 
-        /*
+
         Node node;
         int iCode, fCode, depthLimit;
 
@@ -35,6 +38,7 @@ public class Main {
         System.out.print("Input depthLimit : ");
         depthLimit = scanner.nextInt();
 
+        failed = new HashSet<Integer>();
         node = PeerFinder.find(iCode, fCode, depthLimit);
 
       //  node = PeerFinder.find(13916, 108226, 3); // 1
@@ -46,6 +50,11 @@ public class Main {
             return;
         }
         System.out.println(Node.getParentsString(node));
-*/
+
+        System.out.print("Failed : ");
+        for(Integer failcode : failed) {
+            System.out.print(failcode + "  ");
+        }
+
     }
 }
