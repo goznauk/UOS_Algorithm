@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Main {
     public static final boolean isMovie = true;
     public static final boolean isActor = false;
+    // *-1 for movie
     public static HashSet<Integer> failed;
 
 

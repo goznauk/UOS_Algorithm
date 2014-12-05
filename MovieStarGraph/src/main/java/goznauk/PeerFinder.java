@@ -38,9 +38,15 @@ public class PeerFinder {
         int[] movieCodes, actorCodes;
 
         movieCodes = Node.convertJSONtoIntArray(DAO.getPeers(isActor, actorNode.getCode()));
-        for(int movieCode : movieCodes) {
-            actorNode.addAdjacentNode(new Node(movieCode, actorNode));
+
+        try {
+            for (int movieCode : movieCodes) {
+                actorNode.addAdjacentNode(new Node(movieCode, actorNode));
+            }
+        } catch (NullPointerException e) {
+            Main.failed.add(actorNode.getCode());
         }
+
 
         for(Node movie : actorNode.getAdjacentNodes()) {
             actorCodes = Node.convertJSONtoIntArray(DAO.getPeers(isMovie, movie.getCode()));
@@ -53,7 +59,7 @@ public class PeerFinder {
                     }
                 }
             } catch (NullPointerException e) {
-                Main.failed.add(movie.getCode());
+                Main.failed.add(movie.getCode()*-1);
             }
         }
 
