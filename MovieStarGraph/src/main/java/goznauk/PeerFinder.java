@@ -54,6 +54,10 @@ public class PeerFinder {
                 for (int actorCode : actorCodes) {
                     Node actor = new Node(actorCode, movie);
                     movie.addAdjacentNode(actor);
+                    if (actorCode == actorNode.getCode()) {
+                        continue;
+                    }
+
                     if (actorCode == fCode) {
                         return actor;
                     }
