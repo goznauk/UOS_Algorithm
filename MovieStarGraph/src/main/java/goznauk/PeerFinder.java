@@ -3,6 +3,9 @@ package goznauk;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by goznauk on 2014. 12. 3..
@@ -10,6 +13,8 @@ import java.util.ArrayList;
 public class PeerFinder {
     public static final boolean isMovie = true;
     public static final boolean isActor = false;
+    public static final HashSet<Integer> movieSet = new HashSet<Integer>();
+    public static final HashSet<Integer> actorSet = new HashSet<Integer>();
 
     public static Node find(int iCode, int fCode, int depthLimit) {
         Node iNode, fNode;
@@ -41,10 +46,14 @@ public class PeerFinder {
 
         try {
             for (int movieCode : movieCodes) {
+                if(movieSet.contains(movieCode)) { continue; }
                 actorNode.addAdjacentNode(new Node(movieCode, actorNode));
+                movieSet.add(movieCode);
             }
         } catch (NullPointerException e) {
             Main.failed.add(actorNode.getCode());
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
 
 
@@ -52,18 +61,21 @@ public class PeerFinder {
             actorCodes = Node.convertJSONtoIntArray(DAO.getPeers(isMovie, movie.getCode()));
             try {
                 for (int actorCode : actorCodes) {
+                    if(actorSet.contains(actorCode)) { continue; }
                     Node actor = new Node(actorCode, movie);
                     movie.addAdjacentNode(actor);
                     if (actorCode == actorNode.getCode()) {
                         continue;
                     }
-
+                    actorSet.add(actorCode);
                     if (actorCode == fCode) {
                         return actor;
                     }
                 }
             } catch (NullPointerException e) {
                 Main.failed.add(movie.getCode()*-1);
+            } catch (Exception ex) {
+                ex.printStackTrace();
             }
         }
 
