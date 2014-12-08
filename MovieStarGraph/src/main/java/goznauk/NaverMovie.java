@@ -8,7 +8,6 @@ import org.jsoup.select.Elements;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLClassLoader;
 import java.util.ArrayList;
 
 /**
@@ -60,10 +59,7 @@ public class NaverMovie {
             System.out.println(rows.size());
 
             for (Element row : rows) {
-                Info i = new Info(Integer.parseInt(row.attr("href").substring(28)), row.attr("title"), isActor);
-                actors.add(i.getCode());
-                System.out.println(Integer.parseInt(row.attr("href").substring(28)));
-
+                actors.add(Integer.parseInt(row.attr("href").substring(28)));
             }
 
         } catch (Exception e) {
@@ -127,8 +123,7 @@ public class NaverMovie {
                 Elements rows = doc.select(".pilmo_thumb a");
 
                 for (Element row : rows) {
-                    Info i = new Info(Integer.parseInt(row.attr("href").substring(28)), row.select("img").attr("alt"), isMovie);
-                    movies.add(i.getCode());
+                    movies.add(Integer.parseInt(row.attr("href").substring(28)));
                 }
 
             } catch (Exception e) {
